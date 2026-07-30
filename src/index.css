@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: #F6F3EA;
+  color: #1E2321;
+}
+
+.perf-edge {
+  height: 10px;
+  background-image: radial-gradient(circle at 8px 5px, #F6F3EA 5px, transparent 5.5px);
+  background-size: 16px 10px;
+  background-repeat: repeat-x;
+}
+.perf-edge-top {
+  height: 10px;
+  background-image: radial-gradient(circle at 8px 5px, #F6F3EA 5px, transparent 5.5px);
+  background-size: 16px 10px;
+  background-repeat: repeat-x;
+  transform: rotate(180deg);
+}
+
+.tag-hole {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #F6F3EA;
+  border: 2px solid #1E2321;
+}
+
+.tag-string {
+  position: absolute;
+  top: -14px;
+  left: 24px;
+  width: 2px;
+  height: 16px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #6B6558 0,
+    #6B6558 3px,
+    transparent 3px,
+    transparent 6px
+  );
+  transform: rotate(18deg);
+}
+
+.dash-rule {
+  border-top: 2px dashed #D8D2C0;
+}
+
+::selection {
+  background: #E8B33D;
+  color: #1E2321;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #2F6E4E;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
