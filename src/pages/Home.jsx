@@ -14,7 +14,7 @@ export default function Home() {
             priced to browse.
           </h1>
           <p className="text-ink/70 text-lg max-w-md mb-8">
-            ShopZone is a single page store — every product, every detail
+            ShopZone is a single page store - every product, every detail
             page, every cart update, no reloads. Just clean routing under
             the hood.
           </p>
